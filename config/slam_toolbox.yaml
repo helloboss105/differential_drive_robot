@@ -1,0 +1,61 @@
+# SLAM Toolbox Configuration for Autonomous Mobile Robot
+slam_toolbox:
+  ros__parameters:
+    
+    # INPUT TOPICS
+    scan_topic: scan                    # LIDAR topic name
+    odom_frame: odom                    # Odometry frame
+    map_frame: map                      # Output map frame
+    base_frame: base_link              # Robot base frame
+    
+    # === CRITICAL PARAMETERS FOR AUTONOMY ===
+    
+    # 1. SOLVER TYPE - How SLAM optimizes the map
+    solver_plugin: solver_plugins::CeresSolver  # Industry standard solver
+    ceres_linear_solver_type: SPARSE_NORMAL_CHOLESKY  # Fast & stable
+    ceres_preconditioner: SCHUR_JACOBI
+    ceres_trust_strategy: DOGLEG       # Robust trust region strategy
+    ceres_dogleg_type: TRADITIONAL
+    
+    # 2. LOOP CLOSURE - Detecting when robot revisits an area
+    enable_loop_closure_detection: true
+    loop_search_max_linear_variation: 0.10    # Max 10cm change
+    loop_search_max_angular_variation: 0.174  # Max 10° change
+    minimum_travel_heading_delta: 0.45        # Travel 25° before checking
+    minimum_travel_distance: 0.5              # Travel 0.5m before checking
+    
+    # 3. SCAN MATCHING - How scans are aligned to map
+    correlation_variance_penalty: 0.5
+    distance_variance_penalty: 0.5
+    angle_variance_penalty: 1.0
+    fine_search_angle_offset: 0.349           # Search ±20°
+    coarse_search_angle_offset: 0.349
+    coarse_angle_search_interval: 0.0349      # 2° resolution
+    
+    # 4. MAP UPDATE PARAMETERS
+    occupied_space_weight: 95.0        # Trust occupied space
+    free_space_weight: 5.0             # Trust free space
+    occupied_space_max_z: 2.0          # Ignore obstacles above 2m
+    occupied_space_min_z: -0.1         # Ignore obstacles below ground
+    
+    # 5. FILTERING & NOISE REDUCTION
+    minimum_score_to_pose: 0.0         # Accept all valid matches
+    minimum_traveling_distance: 0.01   # Minimum distance before adding scan
+    minimum_angle_penalty: 0.0
+    score_penalty: 0.001               # Penalty for poor matches
+    
+    # 6. MATCHER PARAMETERS
+    do_loop_closure: true
+    matching_max_occupancy_grid_size: 5000000
+    matcher_acceptance_check: true     # Verify before adding to map
+    max_iterations: 5                  # Optimization iterations per scan
+    
+    # 7. DEBUG & DIAGNOSTICS
+    enable_interactive_mode: false     # Don't wait for user input
+    debug_logging: false               # Set true for troubleshooting
+    throttle_scans: 1                  # Process every Nth scan
+    transform_publish_period: 0.02     # Publish TF at 50Hz
+    
+    # 8. PERFORMANCE TUNING
+    num_scan_matchers: 1              # Threads for matching
+    max_scan_buffer_size: 10          # Keep last 10 scans

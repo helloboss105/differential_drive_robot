@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<robot name="my_robot">
+
+<!-- //here i haave defined the materials for the robot, you can change the colors as you like -->
+
+
+    <material name="blue">
+        <color rgba="0 0 1 1"/>
+    </material>
+
+    <material name="purple">
+        <color rgba="0.5 0 0.5 1"/>
+    </material>
+
+<!-- // this is start of base link  -->
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.6 0.4 0.2"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="0.6 0.4 0.2"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="10"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.2" iyy="0.2" izz="0.2"
+               ixy="0.0" ixz="0.0" iyz="0.0"/>
+    </inertial>
+  </link>
+
+<!-- //End of Base link 
+
+// LIdar link of the robot at top -->
+
+  <link name="lidar">
+    <visual>
+      <geometry>
+        <cylinder length="0.05" radius="0.1"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="purple"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.05" radius="0.1"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.005" iyy="0.005" izz="0.01"
+               ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+
+
+<!-- // new code while below is the old code for the lidar link of the robot, you can change the dimensions as you like -->
+
+
+
+  <gazebo reference="lidar">
+
+  <sensor name="laser" type="ray">
+
+    <pose>0 0 0 0 0 0</pose>
+
+    <visualize>true</visualize>
+
+    <update_rate>10</update_rate>
+
+    <ray>
+      <scan>
+        <horizontal>
+          <samples>360</samples>
+          <resolution>1</resolution>
+          <min_angle>-3.14</min_angle>
+          <max_angle>3.14</max_angle>
+        </horizontal>
+      </scan>
+
+      <range>
+        <min>0.1</min>
+        <max>10.0</max>
+        <resolution>0.01</resolution>
+      </range>
+    </ray>
+
+    <plugin name="laser_controller"
+            filename="libgazebo_ros_ray_sensor.so">
+
+      <ros>
+        <remapping>~/out:=scan</remapping>
+      </ros>
+
+      <output_type>sensor_msgs/LaserScan</output_type>
+
+      <frame_name>lidar</frame_name>
+
+    </plugin>
+
+  </sensor>
+
+</gazebo>
+
+
+
+
+
+
+<!-- //above added new while below is the old code for the wheels of the robot, you can change the dimensions as you like -->
+
+<!-- // right wheel of the robot -->
+
+
+  <link name="right_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.05" radius="0.1"/>
+      </geometry>
+      <origin rpy="0 1.57075 0" xyz="0 0 0"/>
+      <material name="purple"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.05" radius="0.1"/>
+      </geometry>
+      <origin rpy="0 1.5707 0"/>
+    </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <inertia ixx="0.01" iyy="0.01" izz="0.02"
+               ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+      </link>
+
+
+
+<!-- // left wheel of the robot  -->
+
+  <link name="left_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.05" radius="0.1"/>
+      </geometry>
+      <origin rpy="0 1.57075 0" xyz="0 0 0"/>
+      <material name="purple"/>
+    </visual>
+
+        <collision>
+      <geometry>
+        <cylinder length="0.05" radius="0.1"/>
+      </geometry>
+      <origin rpy="0 1.5707 0"/>
+    </collision>
+
+    <inertial>
+      <mass value="1.0"/>
+      <inertia ixx="0.01" iyy="0.01" izz="0.02"
+               ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+
+
+
+
+  </link>
+
+<!-- //front caster wheel -->
+
+    <link name="caster_wheel">
+    <visual>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.25 0 -0.025"/>
+      <material name="purple"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0.25 0 -0.025"/>
+    </collision>
+
+
+
+    <inertial>
+      <mass value="0.2"/>
+      <inertia ixx="0.0001" iyy="0.0001" izz="0.0001"
+               ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+
+
+  <!-- // caster wheel at the back -->
+    <link name="caster_wheel_back">
+    <visual>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.25 0 -0.025"/>
+      <material name="purple"/>
+    </visual>
+
+       <collision>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="-0.25 0 -0.025"/>
+    </collision>
+
+    <inertial>
+      <mass value="0.2"/>
+      <inertia ixx="0.0001" iyy="0.0001" izz="0.0001"
+               ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+
+<!-- //Caster wheel at the back finished  -->
+
+
+
+
+<!-- //Start of Joint  -->
+
+<!-- // joint 1 between base link and right wheel -->
+
+  <joint name="base_to_right_wheel" type="continuous">
+        <parent link="base_link"/>
+        <child link="right_wheel"/>
+        <origin rpy="0 0 1.57" xyz="0 0.230 -0.1"/>
+  </joint>
+
+<!-- // joint 2 between base link and left wheel -->
+
+  <joint name="base_to_left_wheel" type="continuous">
+        <parent link="base_link"/>
+        <child link="left_wheel"/>
+        <origin rpy="0 0 1.57" xyz="0 -0.230 -0.1"/>
+  </joint>
+
+<!-- // joint 3 between base link and front caster wheel -->
+
+    <joint name="caster_wheel" type="fixed">
+        <parent link="base_link"/>
+        <child link="caster_wheel"/>
+        <origin rpy="0 0 0" xyz="0 0 -0.125"/>
+  </joint>
+
+<!-- // joint 4 between base link and back caster wheel -->
+
+    <joint name="caster_wheel_back" type="fixed">
+        <parent link="base_link"/>
+        <child link="caster_wheel_back"/>
+        <origin rpy="0 0 0" xyz="0 0 -0.125"/>
+  </joint>
+
+
+
+<!-- // joint 5 between base link and lidar -->
+
+    <joint name="lidar_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="lidar"/>
+        <origin rpy="0 0 0" xyz="0 0 0.125"/>
+  </joint>
+
+<!-- // end of joints
+
+
+// gazebo plugin for diff drive RObot -->
+  <gazebo>
+    <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
+
+      <left_joint>base_to_left_wheel</left_joint>
+      <right_joint>base_to_right_wheel</right_joint>
+
+      <wheel_separation>0.46</wheel_separation>
+      <wheel_diameter>0.2</wheel_diameter>
+
+      <command_topic>cmd_vel</command_topic>
+      <odometry_topic>odom</odometry_topic>
+
+      <robot_base_frame>base_link</robot_base_frame>
+    </plugin>
+
+    // plugin added for ros2 control 
+
+    <plugin filename="libgazebo_ros2_control.so"
+          name="gazebo_ros2_control">
+    </plugin>
+
+
+
+
+
+  </gazebo>
+
+
+  <!-- <gazebo>
+    <plugin filename="libgazebo_ros2_control.so"
+          name="gazebo_ros2_control">
+    </plugin>
+  </gazebo> -->
+
+
+<!-- // step 2 for making the ros2 control work -->
+
+
+  <ros2_control name="GazeboSystem" type="system">
+
+  <hardware>
+    <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+  </hardware>
+
+  <joint name="base_to_left_wheel">
+    <command_interface name="velocity"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+
+  <joint name="base_to_right_wheel">
+    <command_interface name="velocity"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+
+  </ros2_control>
+
+
+
+
+
+
+
+</robot>
