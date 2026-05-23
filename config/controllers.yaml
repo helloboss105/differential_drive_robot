@@ -21,4 +21,4 @@ diff_cont:
     publish_rate: 50.0
     base_frame_id: base_link
 
-    use_stamped_vel: true
+    use_stamped_vel: false

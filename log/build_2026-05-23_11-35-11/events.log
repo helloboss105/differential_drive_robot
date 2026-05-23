@@ -1,0 +1,230 @@
+[0.000000] (-) TimerEvent: {}
+[0.000725] (Waypoint-Guided-Autonomous-Robot---ROS) JobQueued: {'identifier': 'Waypoint-Guided-Autonomous-Robot---ROS', 'dependencies': OrderedDict()}
+[0.001159] (Waypoint-Guided-Autonomous-Robot---ROS) JobStarted: {'identifier': 'Waypoint-Guided-Autonomous-Robot---ROS'}
+[0.006832] (Waypoint-Guided-Autonomous-Robot---ROS) JobProgress: {'identifier': 'Waypoint-Guided-Autonomous-Robot---ROS', 'progress': 'cmake'}
+[0.007114] (Waypoint-Guided-Autonomous-Robot---ROS) Command: {'cmd': ['/usr/bin/cmake', '/home/petpooja-951/amrsim_ws/src/Waypoint-Guided-Autonomous-Robot---ROS', '-DCMAKE_INSTALL_PREFIX=/home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS'], 'cwd': '/home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/petpooja-951'), ('LANGUAGE', 'en_IN:en'), ('USER', 'petpooja-951'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-gb","osLocale":"en-in","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/antigravity/resources/app/out/nls.messages.json","locale":"en-gb","availableLanguages":{}}'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/petpooja-951'), ('CHROME_DESKTOP', 'antigravity.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-bf3af420-1.10-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/antigravity.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('MANAGERPID', '1441'), ('SYSTEMD_EXEC_PID', '1618'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ANTIGRAVITY_AGENT', '1'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '25558'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'petpooja-951'), ('JOURNAL_STREAM', '8:11740'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'petpooja-951'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTIGRAVITY_EDITOR_APP_ROOT', '/usr/share/antigravity/resources/app'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/petpooja951-HP-250-15-6-inch-G9-Notebook-PC:@/tmp/.ICE-unix/1579,unix/petpooja951-HP-250-15-6-inch-G9-Notebook-PC:/tmp/.ICE-unix/1579'), ('INVOCATION_ID', '6580760768ca41e0b937baf1e927226d'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TAQHP3'), ('LS_COLORS', ''), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('ANTIGRAVITY_TRAJECTORY_ID', 'abdbf08b-f454-4f98-9daa-6a4c79d78cd4'), ('PWD', '/home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/petpooja-951/.config/Antigravity/CachedData/15487b3041e65228cae24980a3f796c905ef582c'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VSCODE_PID', '25558'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.069375] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099519] (-) TimerEvent: {}
+[0.122415] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.129406] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.197345] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.199687] (-) TimerEvent: {}
+[0.205536] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.205748] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.205962] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.208205] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.290933] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.297163] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.297400] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.297723] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.299772] (-) TimerEvent: {}
+[0.300018] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399860] (-) TimerEvent: {}
+[0.457499] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.499943] (-) TimerEvent: {}
+[0.543573] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.591017] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.594905] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.600061] (-) TimerEvent: {}
+[0.603621] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.619641] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.644374] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.695853] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.699649] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.700125] (-) TimerEvent: {}
+[0.789824] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.800268] (-) TimerEvent: {}
+[0.819586] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.857726] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.871136] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.900478] (-) TimerEvent: {}
+[0.949355] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.949947] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.000559] (-) TimerEvent: {}
+[1.029936] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.031504] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.084915] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.19 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[1.100704] (-) TimerEvent: {}
+[1.117383] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found std_srvs: 4.9.1 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[1.128821] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.141409] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.156604] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.172263] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.181907] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.200785] (-) TimerEvent: {}
+[1.245447] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found nav2_msgs: 1.1.20 (/opt/ros/humble/share/nav2_msgs/cmake)\n'}
+[1.272156] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.300909] (-) TimerEvent: {}
+[1.331754] (Waypoint-Guided-Autonomous-Robot---ROS) StderrLine: {'line': b'WARNING: Package name "Waypoint-Guided-Autonomous-Robot---ROS" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.\n'}
+[1.361149] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.361449] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.361577] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.362414] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.363678] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.364574] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.368006] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.368204] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.368690] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.369586] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.383277] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Generating done\n'}
+[1.390909] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Build files have been written to: /home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS\n'}
+[1.401057] (-) TimerEvent: {}
+[1.406935] (Waypoint-Guided-Autonomous-Robot---ROS) CommandEnded: {'returncode': 0}
+[1.407552] (Waypoint-Guided-Autonomous-Robot---ROS) JobProgress: {'identifier': 'Waypoint-Guided-Autonomous-Robot---ROS', 'progress': 'build'}
+[1.408349] (Waypoint-Guided-Autonomous-Robot---ROS) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS', '--', '-j8', '-l8'], 'cwd': '/home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/petpooja-951'), ('LANGUAGE', 'en_IN:en'), ('USER', 'petpooja-951'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-gb","osLocale":"en-in","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/antigravity/resources/app/out/nls.messages.json","locale":"en-gb","availableLanguages":{}}'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/petpooja-951'), ('CHROME_DESKTOP', 'antigravity.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-bf3af420-1.10-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/antigravity.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('MANAGERPID', '1441'), ('SYSTEMD_EXEC_PID', '1618'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ANTIGRAVITY_AGENT', '1'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '25558'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'petpooja-951'), ('JOURNAL_STREAM', '8:11740'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'petpooja-951'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTIGRAVITY_EDITOR_APP_ROOT', '/usr/share/antigravity/resources/app'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/petpooja951-HP-250-15-6-inch-G9-Notebook-PC:@/tmp/.ICE-unix/1579,unix/petpooja951-HP-250-15-6-inch-G9-Notebook-PC:/tmp/.ICE-unix/1579'), ('INVOCATION_ID', '6580760768ca41e0b937baf1e927226d'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TAQHP3'), ('LS_COLORS', ''), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('ANTIGRAVITY_TRAJECTORY_ID', 'abdbf08b-f454-4f98-9daa-6a4c79d78cd4'), ('PWD', '/home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/petpooja-951/.config/Antigravity/CachedData/15487b3041e65228cae24980a3f796c905ef582c'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VSCODE_PID', '25558'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.459371] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/odometry_node.dir/src/odometry_node.cpp.o\x1b[0m\n'}
+[1.459768] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/autonomous_nav_node.dir/src/autonomous_nav_node.cpp.o\x1b[0m\n'}
+[1.501181] (-) TimerEvent: {}
+[1.601606] (-) TimerEvent: {}
+[1.701962] (-) TimerEvent: {}
+[1.802301] (-) TimerEvent: {}
+[1.902649] (-) TimerEvent: {}
+[2.003017] (-) TimerEvent: {}
+[2.103557] (-) TimerEvent: {}
+[2.203989] (-) TimerEvent: {}
+[2.304313] (-) TimerEvent: {}
+[2.404648] (-) TimerEvent: {}
+[2.504994] (-) TimerEvent: {}
+[2.605428] (-) TimerEvent: {}
+[2.705780] (-) TimerEvent: {}
+[2.806103] (-) TimerEvent: {}
+[2.906521] (-) TimerEvent: {}
+[3.006888] (-) TimerEvent: {}
+[3.107240] (-) TimerEvent: {}
+[3.207662] (-) TimerEvent: {}
+[3.308025] (-) TimerEvent: {}
+[3.408352] (-) TimerEvent: {}
+[3.508661] (-) TimerEvent: {}
+[3.608974] (-) TimerEvent: {}
+[3.709286] (-) TimerEvent: {}
+[3.809625] (-) TimerEvent: {}
+[3.909967] (-) TimerEvent: {}
+[4.010307] (-) TimerEvent: {}
+[4.110679] (-) TimerEvent: {}
+[4.178255] (Waypoint-Guided-Autonomous-Robot---ROS) StderrLine: {'line': b'/home/petpooja-951/amrsim_ws/src/Waypoint-Guided-Autonomous-Robot---ROS/src/autonomous_nav_node.cpp: In member function \xe2\x80\x98void AutonomousNavigationNode::start_autonomy_callback(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)\xe2\x80\x99:\n'}
+[4.178488] (Waypoint-Guided-Autonomous-Robot---ROS) StderrLine: {'line': b'/home/petpooja-951/amrsim_ws/src/Waypoint-Guided-Autonomous-Robot---ROS/src/autonomous_nav_node.cpp:88:64: warning: unused parameter \xe2\x80\x98request\xe2\x80\x99 [-Wunused-parameter]\n'}
+[4.178591] (Waypoint-Guided-Autonomous-Robot---ROS) StderrLine: {'line': b'   88 |         const std::shared_ptr<std_srvs::srv::Trigger::Request> request,\n'}
+[4.178683] (Waypoint-Guided-Autonomous-Robot---ROS) StderrLine: {'line': b'      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\n'}
+[4.178814] (Waypoint-Guided-Autonomous-Robot---ROS) StderrLine: {'line': b'/home/petpooja-951/amrsim_ws/src/Waypoint-Guided-Autonomous-Robot---ROS/src/autonomous_nav_node.cpp: In member function \xe2\x80\x98void AutonomousNavigationNode::stop_autonomy_callback(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)\xe2\x80\x99:\n'}
+[4.178900] (Waypoint-Guided-Autonomous-Robot---ROS) StderrLine: {'line': b'/home/petpooja-951/amrsim_ws/src/Waypoint-Guided-Autonomous-Robot---ROS/src/autonomous_nav_node.cpp:103:64: warning: unused parameter \xe2\x80\x98request\xe2\x80\x99 [-Wunused-parameter]\n'}
+[4.178980] (Waypoint-Guided-Autonomous-Robot---ROS) StderrLine: {'line': b'  103 |         const std::shared_ptr<std_srvs::srv::Trigger::Request> request,\n'}
+[4.179058] (Waypoint-Guided-Autonomous-Robot---ROS) StderrLine: {'line': b'      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\n'}
+[4.210790] (-) TimerEvent: {}
+[4.311129] (-) TimerEvent: {}
+[4.411461] (-) TimerEvent: {}
+[4.511814] (-) TimerEvent: {}
+[4.612243] (-) TimerEvent: {}
+[4.712578] (-) TimerEvent: {}
+[4.812888] (-) TimerEvent: {}
+[4.913267] (-) TimerEvent: {}
+[5.014133] (-) TimerEvent: {}
+[5.114572] (-) TimerEvent: {}
+[5.214931] (-) TimerEvent: {}
+[5.315276] (-) TimerEvent: {}
+[5.415637] (-) TimerEvent: {}
+[5.515968] (-) TimerEvent: {}
+[5.616308] (-) TimerEvent: {}
+[5.716674] (-) TimerEvent: {}
+[5.817033] (-) TimerEvent: {}
+[5.917385] (-) TimerEvent: {}
+[6.017708] (-) TimerEvent: {}
+[6.118034] (-) TimerEvent: {}
+[6.218355] (-) TimerEvent: {}
+[6.318707] (-) TimerEvent: {}
+[6.419119] (-) TimerEvent: {}
+[6.519435] (-) TimerEvent: {}
+[6.619764] (-) TimerEvent: {}
+[6.700873] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable autonomous_nav_node\x1b[0m\n'}
+[6.719899] (-) TimerEvent: {}
+[6.820210] (-) TimerEvent: {}
+[6.920620] (-) TimerEvent: {}
+[6.966298] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'[ 75%] Built target autonomous_nav_node\n'}
+[7.020732] (-) TimerEvent: {}
+[7.121119] (-) TimerEvent: {}
+[7.221463] (-) TimerEvent: {}
+[7.321742] (-) TimerEvent: {}
+[7.422040] (-) TimerEvent: {}
+[7.522288] (-) TimerEvent: {}
+[7.622661] (-) TimerEvent: {}
+[7.723025] (-) TimerEvent: {}
+[7.823371] (-) TimerEvent: {}
+[7.923733] (-) TimerEvent: {}
+[8.024044] (-) TimerEvent: {}
+[8.124296] (-) TimerEvent: {}
+[8.224607] (-) TimerEvent: {}
+[8.324887] (-) TimerEvent: {}
+[8.425155] (-) TimerEvent: {}
+[8.525461] (-) TimerEvent: {}
+[8.625751] (-) TimerEvent: {}
+[8.726121] (-) TimerEvent: {}
+[8.826507] (-) TimerEvent: {}
+[8.926838] (-) TimerEvent: {}
+[9.027158] (-) TimerEvent: {}
+[9.127531] (-) TimerEvent: {}
+[9.227923] (-) TimerEvent: {}
+[9.328279] (-) TimerEvent: {}
+[9.428602] (-) TimerEvent: {}
+[9.529035] (-) TimerEvent: {}
+[9.629626] (-) TimerEvent: {}
+[9.729970] (-) TimerEvent: {}
+[9.830316] (-) TimerEvent: {}
+[9.930651] (-) TimerEvent: {}
+[10.030957] (-) TimerEvent: {}
+[10.131295] (-) TimerEvent: {}
+[10.231666] (-) TimerEvent: {}
+[10.331993] (-) TimerEvent: {}
+[10.432297] (-) TimerEvent: {}
+[10.532630] (-) TimerEvent: {}
+[10.633011] (-) TimerEvent: {}
+[10.733308] (-) TimerEvent: {}
+[10.833649] (-) TimerEvent: {}
+[10.934045] (-) TimerEvent: {}
+[11.034382] (-) TimerEvent: {}
+[11.134715] (-) TimerEvent: {}
+[11.147075] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable odometry_node\x1b[0m\n'}
+[11.234824] (-) TimerEvent: {}
+[11.335152] (-) TimerEvent: {}
+[11.435514] (-) TimerEvent: {}
+[11.535880] (-) TimerEvent: {}
+[11.636193] (-) TimerEvent: {}
+[11.673741] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'[100%] Built target odometry_node\n'}
+[11.686840] (Waypoint-Guided-Autonomous-Robot---ROS) CommandEnded: {'returncode': 0}
+[11.687774] (Waypoint-Guided-Autonomous-Robot---ROS) JobProgress: {'identifier': 'Waypoint-Guided-Autonomous-Robot---ROS', 'progress': 'install'}
+[11.699321] (Waypoint-Guided-Autonomous-Robot---ROS) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS'], 'cwd': '/home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/petpooja-951'), ('LANGUAGE', 'en_IN:en'), ('USER', 'petpooja-951'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-gb","osLocale":"en-in","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/antigravity/resources/app/out/nls.messages.json","locale":"en-gb","availableLanguages":{}}'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/petpooja-951'), ('CHROME_DESKTOP', 'antigravity.desktop'), ('DESKTOP_SESSION', 'ubuntu'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-bf3af420-1.10-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/antigravity.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('MANAGERPID', '1441'), ('SYSTEMD_EXEC_PID', '1618'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ANTIGRAVITY_AGENT', '1'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '25558'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'petpooja-951'), ('JOURNAL_STREAM', '8:11740'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'petpooja-951'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTIGRAVITY_EDITOR_APP_ROOT', '/usr/share/antigravity/resources/app'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/petpooja951-HP-250-15-6-inch-G9-Notebook-PC:@/tmp/.ICE-unix/1579,unix/petpooja951-HP-250-15-6-inch-G9-Notebook-PC:/tmp/.ICE-unix/1579'), ('INVOCATION_ID', '6580760768ca41e0b937baf1e927226d'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TAQHP3'), ('LS_COLORS', ''), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('ANTIGRAVITY_TRAJECTORY_ID', 'abdbf08b-f454-4f98-9daa-6a4c79d78cd4'), ('PWD', '/home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/petpooja-951/.config/Antigravity/CachedData/15487b3041e65228cae24980a3f796c905ef582c'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VSCODE_PID', '25558'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[11.708168] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.708405] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/lib/Waypoint-Guided-Autonomous-Robot---ROS/odometry_node\n'}
+[11.710742] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Set runtime path of "/home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/lib/Waypoint-Guided-Autonomous-Robot---ROS/odometry_node" to ""\n'}
+[11.710921] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/lib/Waypoint-Guided-Autonomous-Robot---ROS/autonomous_nav_node\n'}
+[11.711656] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Set runtime path of "/home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/lib/Waypoint-Guided-Autonomous-Robot---ROS/autonomous_nav_node" to ""\n'}
+[11.711815] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/launch\n'}
+[11.711954] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/launch/slam.launch.py\n'}
+[11.712085] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/launch/bringup.launch.py\n'}
+[11.712233] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/launch/navigation.launch.py\n'}
+[11.712368] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/launch/sim.launch.py\n'}
+[11.712471] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/urdf\n'}
+[11.712615] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/urdf/my_robot.urdf\n'}
+[11.712711] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/urdf/old_model.urdf\n'}
+[11.712916] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/config\n'}
+[11.713085] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/config/controllers.yaml\n'}
+[11.713319] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/config/nav2_params.yaml\n'}
+[11.713460] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/config/slam_toolbox.yaml\n'}
+[11.713558] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/maps\n'}
+[11.713655] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/ament_index/resource_index/package_run_dependencies/Waypoint-Guided-Autonomous-Robot---ROS\n'}
+[11.713760] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/ament_index/resource_index/parent_prefix_path/Waypoint-Guided-Autonomous-Robot---ROS\n'}
+[11.713873] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/environment/ament_prefix_path.sh\n'}
+[11.713985] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/environment/ament_prefix_path.dsv\n'}
+[11.714087] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/environment/path.sh\n'}
+[11.714571] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/environment/path.dsv\n'}
+[11.714844] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/local_setup.bash\n'}
+[11.714944] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/local_setup.sh\n'}
+[11.715028] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/local_setup.zsh\n'}
+[11.715107] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/local_setup.dsv\n'}
+[11.715306] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/package.dsv\n'}
+[11.715435] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/ament_index/resource_index/packages/Waypoint-Guided-Autonomous-Robot---ROS\n'}
+[11.715707] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/cmake/Waypoint-Guided-Autonomous-Robot---ROSConfig.cmake\n'}
+[11.715814] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/cmake/Waypoint-Guided-Autonomous-Robot---ROSConfig-version.cmake\n'}
+[11.716042] (Waypoint-Guided-Autonomous-Robot---ROS) StdoutLine: {'line': b'-- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/package.xml\n'}
+[11.718696] (Waypoint-Guided-Autonomous-Robot---ROS) CommandEnded: {'returncode': 0}
+[11.736282] (-) TimerEvent: {}
+[11.738093] (Waypoint-Guided-Autonomous-Robot---ROS) JobEnded: {'identifier': 'Waypoint-Guided-Autonomous-Robot---ROS', 'rc': 0}
+[11.738863] (-) EventReactorShutdown: {}

@@ -36,30 +36,25 @@ from launch_ros.actions import Node
 from launch.actions import ExecuteProcess
 from launch.substitutions import Command
 from launch_ros.parameter_descriptions import ParameterValue
+from ament_index_python.packages import get_package_share_directory
 import os
 
 def generate_launch_description():
 
-    # robot_desc = ParameterValue(
-    #     Command(['cat ', '/home/hello-boss/practice_ros_ws/src/my_robot/urdf/old_model.urdf']),
-    #     value_type=str
-    # )
+    # Resolve package share directory
+    pkg_share = get_package_share_directory('Waypoint-Guided-Autonomous-Robot---ROS')
+    urdf_path = os.path.join(pkg_share, 'urdf', 'my_robot.urdf')
+    controllers_path = os.path.join(pkg_share, 'config', 'controllers.yaml')
 
-    #Above code is not working because cat command is not available in windows, so we will use xacro command instead of cat command to read the urdf file.
-    # 
-    # Note: If you are using windows, you need to install xacro package in order to use xacro command. You can install xacro package using pip command: pip install xacro
-    # 
-    # 
-    # 
     robot_desc = ParameterValue(
-        Command(['cat ', '/home/hello-boss/practice_ros_ws/src/my_robot/urdf/my_robot.urdf']),
+        Command(['xacro ', urdf_path]),
         value_type=str
     )
 
     return LaunchDescription([
 
         ExecuteProcess(
-            cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_factory.so'],
+            cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so'],
             output='screen'
         ),
 
@@ -75,7 +70,8 @@ def generate_launch_description():
             executable='spawn_entity.py',
             arguments=[
                 '-topic', 'robot_description',
-                '-entity', 'my_robot'
+                '-entity', 'my_robot',
+                '-z', '0.2'
             ],
             output='screen'
         ),
@@ -92,7 +88,7 @@ def generate_launch_description():
             arguments=[
                 'diff_cont',
                 '--param-file',
-                '/home/hello-boss/practice_ros_ws/src/my_robot/config/controllers.yaml'
+                controllers_path
             ]
         ),
 

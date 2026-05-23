@@ -189,14 +189,14 @@
   <joint name="base_to_right_wheel" type="continuous">
     <parent link="base_link"/>
     <child link="right_wheel"/>
-    <origin xyz="0 0.23 -0.1" rpy="0 0 1.57"/>
+    <origin xyz="0 -0.230 -0.1" rpy="0 0 1.57"/>
     <axis xyz="1 0 0"/>
   </joint>
 
   <joint name="base_to_left_wheel" type="continuous">
     <parent link="base_link"/>
     <child link="left_wheel"/>
-    <origin xyz="0 -0.23 -0.1" rpy="0 0 1.57"/>
+    <origin xyz="0 0.230 -0.1" rpy="0 0 1.57"/>
     <axis xyz="1 0 0"/>
   </joint>
 
@@ -230,22 +230,40 @@
     <origin xyz="0 0 0.1" rpy="0 0 0"/>
   </joint>
 
-  <!-- GAZEBO DIFFERENTIAL DRIVE PLUGIN -->
+
   <gazebo>
-    <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
-      <left_joint>base_to_left_wheel</left_joint>
-      <right_joint>base_to_right_wheel</right_joint>
-
-      <wheel_separation>0.46</wheel_separation>
-      <wheel_diameter>0.2</wheel_diameter>
-
-      <command_topic>cmd_vel</command_topic>
-      <odometry_topic>odom</odometry_topic>
-
-      <robot_base_frame>base_link</robot_base_frame>
-      <publish_odom>true</publish_odom>
-      <publish_odom_tf>false</publish_odom_tf>
+    <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+      <parameters>$(find Waypoint-Guided-Autonomous-Robot---ROS)/config/controllers.yaml</parameters>
+      <ros>
+        <remapping>/diff_cont/cmd_vel_unstamped:=/cmd_vel</remapping>
+      </ros>
     </plugin>
+  </gazebo>
+
+  <ros2_control name="GazeboSystem" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+    <joint name="base_to_left_wheel">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="base_to_right_wheel">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+  <gazebo reference="caster_wheel">
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
+  </gazebo>
+
+  <gazebo reference="caster_wheel_back">
+    <mu1>0.0</mu1>
+    <mu2>0.0</mu2>
   </gazebo>
 
   <!-- GAZEBO LIDAR PLUGIN -->

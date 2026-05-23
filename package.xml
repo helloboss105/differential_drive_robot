@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>my_robot</name>
+  <name>Waypoint-Guided-Autonomous-Robot---ROS</name>
   <version>0.0.1</version>
   <description>Autonomous Mobile Robot using ROS2 Humble and Nav2</description>
   <maintainer email="aniketnagare444@gmail.com">hello-boss</maintainer>
@@ -25,6 +25,8 @@
   <!-- SIMULATION & GAZEBO -->
   <depend>gazebo_ros</depend>
   <depend>gazebo_ros_pkgs</depend>
+  <depend>gazebo_ros2_control</depend>
+  <depend>joint_state_broadcaster</depend>
   <depend>joint_state_publisher</depend>
   <depend>joint_state_publisher_gui</depend>
   <depend>robot_state_publisher</depend>

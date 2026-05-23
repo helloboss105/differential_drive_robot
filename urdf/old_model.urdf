@@ -89,7 +89,7 @@
 
       <range>
         <min>0.1</min>
-        <max>10.0</max>
+        <max>5.0</max>
         <resolution>0.01</resolution>
       </range>
     </ray>
@@ -126,7 +126,7 @@
       <geometry>
         <cylinder length="0.05" radius="0.1"/>
       </geometry>
-      <origin rpy="0 1.57075 0" xyz="0 0 0"/>
+      <origin rpy="0 1.5707 0" xyz="0 0 0"/>
       <material name="purple"/>
     </visual>
     <collision>
@@ -140,7 +140,7 @@
       <inertia ixx="0.01" iyy="0.01" izz="0.02"
                ixy="0" ixz="0" iyz="0"/>
     </inertial>
-      </link>
+  </link>
 
 
 
@@ -151,11 +151,11 @@
       <geometry>
         <cylinder length="0.05" radius="0.1"/>
       </geometry>
-      <origin rpy="0 1.57075 0" xyz="0 0 0"/>
+      <origin rpy="0 1.5707 0" xyz="0 0 0"/>
       <material name="purple"/>
     </visual>
 
-        <collision>
+    <collision>
       <geometry>
         <cylinder length="0.05" radius="0.1"/>
       </geometry>
@@ -167,10 +167,6 @@
       <inertia ixx="0.01" iyy="0.01" izz="0.02"
                ixy="0" ixz="0" iyz="0"/>
     </inertial>
-
-
-
-
   </link>
 
 <!-- //front caster wheel -->
@@ -239,7 +235,8 @@
   <joint name="base_to_right_wheel" type="continuous">
         <parent link="base_link"/>
         <child link="right_wheel"/>
-        <origin rpy="0 0 1.57" xyz="0 0.230 -0.1"/>
+        <origin rpy="0 0 1.57" xyz="0 -0.230 -0.1"/>
+        <axis xyz="1 0 0"/>
   </joint>
 
 <!-- // joint 2 between base link and left wheel -->
@@ -247,7 +244,8 @@
   <joint name="base_to_left_wheel" type="continuous">
         <parent link="base_link"/>
         <child link="left_wheel"/>
-        <origin rpy="0 0 1.57" xyz="0 -0.230 -0.1"/>
+        <origin rpy="0 0 1.57" xyz="0 0.230 -0.1"/>
+        <axis xyz="-1 0 0"/>
   </joint>
 
 <!-- // joint 3 between base link and front caster wheel -->
@@ -281,6 +279,7 @@
 
 // gazebo plugin for diff drive RObot -->
   <gazebo>
+    <!-- Commented out old diff drive plugin to avoid conflict with ros2_control
     <plugin name="diff_drive" filename="libgazebo_ros_diff_drive.so">
 
       <left_joint>base_to_left_wheel</left_joint>
@@ -294,11 +293,14 @@
 
       <robot_base_frame>base_link</robot_base_frame>
     </plugin>
+    -->
 
-    // plugin added for ros2 control 
-
-    <plugin filename="libgazebo_ros2_control.so"
-          name="gazebo_ros2_control">
+    <!-- plugin added for ros2 control -->
+    <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+      <parameters>$(find Waypoint-Guided-Autonomous-Robot---ROS)/config/controllers.yaml</parameters>
+      <ros>
+        <remapping>/diff_cont/cmd_vel_unstamped:=/cmd_vel</remapping>
+      </ros>
     </plugin>
 
 
@@ -338,10 +340,14 @@
 
   </ros2_control>
 
+  <gazebo reference="caster_wheel">
+    <mu1 value="0.001"/>
+    <mu2 value="0.001"/>
+  </gazebo>
 
-
-
-
-
+  <gazebo reference="caster_wheel_back">
+    <mu1 value="0.001"/>
+    <mu2 value="0.001"/>
+  </gazebo>
 
 </robot>

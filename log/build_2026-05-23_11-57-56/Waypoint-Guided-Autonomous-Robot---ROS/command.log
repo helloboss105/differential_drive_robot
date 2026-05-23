@@ -1,0 +1,2 @@
+Invoking command in '/home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS': /usr/bin/cmake --build /home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS -- -j8 -l8
+Invoked command in '/home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS' returned '2': /usr/bin/cmake --build /home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS -- -j8 -l8

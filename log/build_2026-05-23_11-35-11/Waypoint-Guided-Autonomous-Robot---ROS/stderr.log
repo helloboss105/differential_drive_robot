@@ -1,0 +1,9 @@
+WARNING: Package name "Waypoint-Guided-Autonomous-Robot---ROS" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+/home/petpooja-951/amrsim_ws/src/Waypoint-Guided-Autonomous-Robot---ROS/src/autonomous_nav_node.cpp: In member function ‘void AutonomousNavigationNode::start_autonomy_callback(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)’:
+/home/petpooja-951/amrsim_ws/src/Waypoint-Guided-Autonomous-Robot---ROS/src/autonomous_nav_node.cpp:88:64: warning: unused parameter ‘request’ [-Wunused-parameter]
+   88 |         const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/home/petpooja-951/amrsim_ws/src/Waypoint-Guided-Autonomous-Robot---ROS/src/autonomous_nav_node.cpp: In member function ‘void AutonomousNavigationNode::stop_autonomy_callback(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)’:
+/home/petpooja-951/amrsim_ws/src/Waypoint-Guided-Autonomous-Robot---ROS/src/autonomous_nav_node.cpp:103:64: warning: unused parameter ‘request’ [-Wunused-parameter]
+  103 |         const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~

@@ -1,0 +1,37 @@
+[0.016s] Invoking command in '/home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS -- -j8 -l8
+[0.081s] [ 50%] Built target autonomous_nav_node
+[0.084s] [100%] Built target odometry_node
+[0.099s] Invoked command in '/home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS -- -j8 -l8
+[0.110s] Invoking command in '/home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS
+[0.119s] -- Install configuration: ""
+[0.119s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/lib/Waypoint-Guided-Autonomous-Robot---ROS/odometry_node
+[0.119s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/lib/Waypoint-Guided-Autonomous-Robot---ROS/autonomous_nav_node
+[0.119s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/launch
+[0.119s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/launch/slam.launch.py
+[0.120s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/launch/bringup.launch.py
+[0.120s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/launch/navigation.launch.py
+[0.120s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/launch/sim.launch.py
+[0.120s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/urdf
+[0.120s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/urdf/my_robot.urdf
+[0.120s] -- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/urdf/old_model.urdf
+[0.120s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/config
+[0.121s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/config/controllers.yaml
+[0.121s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/config/nav2_params.yaml
+[0.121s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/config/slam_toolbox.yaml
+[0.121s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/maps
+[0.121s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/ament_index/resource_index/package_run_dependencies/Waypoint-Guided-Autonomous-Robot---ROS
+[0.121s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/ament_index/resource_index/parent_prefix_path/Waypoint-Guided-Autonomous-Robot---ROS
+[0.121s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/environment/ament_prefix_path.sh
+[0.121s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/environment/ament_prefix_path.dsv
+[0.121s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/environment/path.sh
+[0.122s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/environment/path.dsv
+[0.122s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/local_setup.bash
+[0.122s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/local_setup.sh
+[0.122s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/local_setup.zsh
+[0.122s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/local_setup.dsv
+[0.122s] -- Installing: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/package.dsv
+[0.122s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/ament_index/resource_index/packages/Waypoint-Guided-Autonomous-Robot---ROS
+[0.123s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/cmake/Waypoint-Guided-Autonomous-Robot---ROSConfig.cmake
+[0.123s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/cmake/Waypoint-Guided-Autonomous-Robot---ROSConfig-version.cmake
+[0.123s] -- Up-to-date: /home/petpooja-951/amrsim_ws/install/Waypoint-Guided-Autonomous-Robot---ROS/share/Waypoint-Guided-Autonomous-Robot---ROS/package.xml
+[0.124s] Invoked command in '/home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/petpooja-951/amrsim_ws/build/Waypoint-Guided-Autonomous-Robot---ROS
