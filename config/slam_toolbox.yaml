@@ -21,7 +21,7 @@ slam_toolbox:
     enable_loop_closure_detection: true
     loop_search_max_linear_variation: 0.10    # Max 10cm change
     loop_search_max_angular_variation: 0.174  # Max 10° change
-    minimum_travel_heading_delta: 0.45        # Travel 25° before checking
+    minimum_travel_heading_delta: 0.15        # Travel 25° before checking
     minimum_travel_distance: 0.5              # Travel 0.5m before checking
     
     # 3. SCAN MATCHING - How scans are aligned to map

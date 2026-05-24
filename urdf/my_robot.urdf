@@ -266,24 +266,24 @@
     <mu2>0.0</mu2>
   </gazebo>
 
-  <!-- GAZEBO LIDAR PLUGIN -->
+  <!-- GAZEBO LIDAR PLUGIN
   <gazebo reference="lidar">
-    <sensor name="lidar_sensor" type="ray">
+    <sensor name="laser" type="ray">
       <always_on>true</always_on>
       <visualize>true</visualize>
-      <update_rate>10</update_rate>
+      <update_rate>50</update_rate>
       <ray>
         <scan>
           <horizontal>
             <samples>360</samples>
             <resolution>1</resolution>
-            <min_angle>0</min_angle>
-            <max_angle>6.283185307179586</max_angle>
+            <min_angle>-3.14159</min_angle>
+            <max_angle>3.14159</max_angle>
           </horizontal>
         </scan>
         <range>
           <min>0.08</min>
-          <max>30.0</max>
+          <max>5.0</max>
           <resolution>0.01</resolution>
         </range>
         <noise>
@@ -292,7 +292,7 @@
           <stddev>0.01</stddev>
         </noise>
       </ray>
-      <plugin name="lidar_plugin" filename="libgazebo_ros_ray_sensor.so">
+      <plugin name="laser_controller" filename="libgazebo_ros_ray_sensor.so">
         <ros>
           <remapping>~/out:=scan</remapping>
         </ros>
@@ -300,7 +300,53 @@
         <frame_name>lidar</frame_name>
       </plugin>
     </sensor>
+  </gazebo> -->
+
+
+<gazebo reference="lidar">
+
+  <sensor name="laser" type="ray">
+
+    <pose>0 0 0 0 0 0</pose>
+
+    <visualize>true</visualize>
+
+    <update_rate>10</update_rate>
+
+    <ray>
+      <scan>
+        <horizontal>
+          <samples>360</samples>
+          <resolution>1</resolution>
+          <min_angle>-3.14</min_angle>
+          <max_angle>3.14</max_angle>
+        </horizontal>
+      </scan>
+
+      <range>
+        <min>0.1</min>
+        <max>5.0</max>
+        <resolution>0.01</resolution>
+      </range>
+    </ray>
+
+    <plugin name="laser_controller"
+            filename="libgazebo_ros_ray_sensor.so">
+
+      <ros>
+        <remapping>~/out:=scan</remapping>
+      </ros>
+
+      <output_type>sensor_msgs/LaserScan</output_type>
+
+      <frame_name>lidar</frame_name>
+
+    </plugin>
+
+    </sensor>
+
   </gazebo>
+
 
   <!-- GAZEBO IMU PLUGIN -->
   <gazebo reference="imu_link">
