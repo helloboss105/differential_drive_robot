@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(Waypoint-Guided-Autonomous-Robot---ROS)
+project(differential_drive_robot)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -58,7 +58,7 @@ install(DIRECTORY urdf/ DESTINATION share/${PROJECT_NAME}/urdf)
 install(DIRECTORY config/ DESTINATION share/${PROJECT_NAME}/config)
 
 # Install maps directory
-install(DIRECTORY maps/ DESTINATION share/${PROJECT_NAME}/maps)
+# install(DIRECTORY maps/ DESTINATION share/${PROJECT_NAME}/maps)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

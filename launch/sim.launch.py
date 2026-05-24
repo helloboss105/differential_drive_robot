@@ -38,11 +38,12 @@ from launch.substitutions import Command
 from launch_ros.parameter_descriptions import ParameterValue
 from ament_index_python.packages import get_package_share_directory
 import os
+import xacro
 
 def generate_launch_description():
 
     # Resolve package share directory
-    pkg_share = get_package_share_directory('Waypoint-Guided-Autonomous-Robot---ROS')
+    pkg_share = get_package_share_directory('differential_drive_robot')
     urdf_path = os.path.join(pkg_share, 'urdf', 'my_robot.urdf')
     controllers_path = os.path.join(pkg_share, 'config', 'controllers.yaml')
 
