@@ -25,10 +25,13 @@ def generate_launch_description():
             executable='async_slam_toolbox_node',
             name='slam_toolbox',
             output='screen',
-            parameters=[slam_config_file],
+            parameters=[
+                slam_config_file,
+                {'use_sim_time': True}
+            ],
             remappings=[
-                ('/scan', '/scan'),  # LIDAR input
-                ('/odom', '/odom'),  # Odometry input (optional, SLAM can estimate without it)
+                ('/scan', '/scan'),
+                ('/odom', '/odom'),
             ]
-        ),
+        )    
     ])
