@@ -10,7 +10,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     # Get package directory
-    pkg_dir = get_package_share_directory('my_robot')
+    pkg_dir = get_package_share_directory('differential_drive_robot')
     urdf_file = os.path.join(pkg_dir, 'urdf', 'my_robot.urdf')
     
     # Read URDF content
@@ -48,7 +48,7 @@ def generate_launch_description():
         #    PUBLISHES: /tf (odom → base_link), /odom (odometry messages)
         #    LISTENS: /cmd_vel (velocity commands)
         Node(
-            package='my_robot',
+            package='differential_drive_robot',
             executable='odometry_node',
             name='odometry_node',
             output='screen',

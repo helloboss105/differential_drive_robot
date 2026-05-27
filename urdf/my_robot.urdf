@@ -161,13 +161,6 @@
       <material name="red"/>
     </visual>
 
-    <collision>
-      <geometry>
-        <cylinder length="0.05" radius="0.1"/>
-      </geometry>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-    </collision>
-
     <inertial>
       <mass value="0.5"/>
       <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -276,13 +269,12 @@
         <scan>
           <horizontal>
             <samples>360</samples>
-            <resolution>1</resolution>
-            <min_angle>-3.14159</min_angle>
-            <max_angle>3.14159</max_angle>
+            <min_angle>-3.14</min_angle>
+            <max_angle>3.14</max_angle>
           </horizontal>
         </scan>
         <range>
-          <min>0.08</min>
+          <min>0.1</min>
           <max>5.0</max>
           <resolution>0.01</resolution>
         </range>

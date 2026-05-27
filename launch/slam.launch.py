@@ -7,7 +7,7 @@ import yaml
 
 
 def generate_launch_description():
-    pkg_dir = get_package_share_directory('my_robot')
+    pkg_dir = get_package_share_directory('differential_drive_robot')
     slam_config_file = os.path.join(pkg_dir, 'config', 'slam_toolbox.yaml')
 
     return LaunchDescription([
